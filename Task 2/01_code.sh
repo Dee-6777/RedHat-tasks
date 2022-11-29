@@ -1,3 +1,5 @@
+# with using associative arrays
+#!/bin/bash
 arr=( `cat "IP addresses.txt" `)
 declare -A hash
 max_times=0
