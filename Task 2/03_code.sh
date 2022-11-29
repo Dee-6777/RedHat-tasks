@@ -1,4 +1,4 @@
-# with using associative arrays
+# without using associative arrays
 
 #!/bin/bash
 arr=( `cat "IP addresses.txt" `)
