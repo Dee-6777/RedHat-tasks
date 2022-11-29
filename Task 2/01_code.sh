@@ -2,12 +2,12 @@
 
 #!/bin/bash
 arr=( `cat "IP addresses.txt" `)
-declare -A hash
+declare -A freq
 max_times=0
 for i in "${arr[@]}"; 
 do
-  ((hash[$i]++))
-  h=${hash[$i]}
+  ((freq[$i]++))
+  h=${freq[$i]}
   if [[ $h > $max_times ]]; 
   then
     max=$i
