@@ -1,4 +1,6 @@
 # without using associative arrays (hashmap)
+# TC: O(n^2)
+# SC: O(n)
 
 #!/bin/bash
 arr=( `cat "IP addresses.txt" `)
