@@ -7,7 +7,7 @@ declare -A freq
 max_times=0
 for i in "${arr[@]}"; 
 do
-  ((freq[$i]++))
+  ((freq[$i]++))           # (( )) allows C-style manipulation of variables for example, (( var++ ))
   h=${freq[$i]}
   if [[ $h > $max_times ]]; 
   then
