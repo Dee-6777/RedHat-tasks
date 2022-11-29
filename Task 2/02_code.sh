@@ -1,4 +1,4 @@
-# with using associative arrays
+# with using associative arrays (Hash Maps)
 # Time Complexity: O(n^2)
 # Space Complexity: O(1)
 #!/bin/bash
