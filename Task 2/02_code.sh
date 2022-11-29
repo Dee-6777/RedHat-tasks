@@ -1,5 +1,6 @@
 # with using associative arrays
-
+# Time Complexity: O(n^2)
+# Space Complexity: O(1)
 #!/bin/bash
 arr=( `cat "IP addresses.txt" `)
 declare -A freq
