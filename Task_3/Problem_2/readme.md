@@ -2,7 +2,7 @@
 `Write a script to remove duplicated lines from a file.`
 
 ## Solution 1: (Using sort and uniq)
-* Time Complexity : O(nlob(n)) (loglinear complexity)
+* Time Complexity : O(nlog(n)) (loglinear complexity)
 
 * How to run : Type `sh Code1.sh` in your bash terminal
 
