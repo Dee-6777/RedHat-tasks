@@ -19,6 +19,6 @@
 * How to run : Type `sh Code_2.sh` in your bash terminal
 
 * Explanation :
-    * `total=$(echo $total + $i | bc);` : Computes sum of integers as well as floating point values. The use of bc helps to calculate floating point values as it provides the functionality of a scientific calculator within a Bash script.
+    * `total=$(echo $total + $i | bc);` : Computes sum of all kinds of numbers such as integers and floating point values. The use of bc helps to calculate floating point values as it provides the functionality of a scientific calculator within a Bash script.
     
     * `echo "sum = ${total}" > output2.txt` : Stores the total sum in the file output2.txt and if already present overwrites the file. 
