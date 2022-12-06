@@ -1,5 +1,5 @@
 # %A   Day
-# %m   Month
+# %B   Month
 # %Y   Year 
 # %M   minute (00..59)
 # %H   hour (00..23)
