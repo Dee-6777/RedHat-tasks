@@ -7,7 +7,7 @@
 * How to run : Type `sh Code1.sh` in your bash terminal
 
 * Explanation :
-This code been simply made using modifiers along with echo to get the desired output
+This code uses date modifiers along with echo to get the desired output
     * Used Modifiers : 
         *  %A - Day
         *  %m - Month
@@ -15,4 +15,5 @@ This code been simply made using modifiers along with echo to get the desired ou
         *  %M - minute (00..59)
         *  %H - hour (00..23)
         *  %S - second (00..60)
+        
     * Use of "-e" : Using the -e option allows us to use escape characters. These special characters make it easy to customize the output of the echo command.
