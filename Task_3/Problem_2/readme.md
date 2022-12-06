@@ -17,5 +17,5 @@
 * How to run : Type `sh Code2.sh` in your bash terminal
 
 * Explanation :
-    * `awk '!_[$0]++' dup.txt` : awk reads each line and !_[$0]++ first checks the first occurance of each line and then increements the count. 
+    * `awk '!_[$0]++' dup.txt` : `awk !_[$0]++` maintains a hashmap for all the visited lines and checks if it is not visited.
     * `cat -n > output2.txt` : cat appends the uniq lines along with the line numbers inside the output file.
