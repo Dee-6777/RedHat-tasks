@@ -13,6 +13,9 @@
 
 ## Solution 2: (Using awk)
 * Time Complexity : O(n) (linear complexity)
+
+* How to run : Type `sh Code2.sh` in your bash terminal
+
 * Explanation :
     * `awk '!_[$0]++' dup.txt` : awk reads each line and !_[$0]++ first checks the first occurance of each line and then increements the count. 
     * `cat -n > output2.txt` : cat appends the uniq lines along with the line numbers inside the output file.
