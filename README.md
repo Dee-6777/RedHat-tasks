@@ -3,7 +3,7 @@
 Here I'm sharing my RedHat tasks.
 
 ## TASK-1
-Presentation on LINUX Commands and it's functionalities. 
+* `Presentation on LINUX Commands and it's functionalities.`
 
 ## TASK-2
 * Problem : 
