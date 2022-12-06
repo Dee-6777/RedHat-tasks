@@ -13,4 +13,4 @@ do
     sum=$((sum+$i))
 done
 
-echo "$sum" > output1.txt
+echo "sum = $sum" > output1.txt
