@@ -1,6 +1,0 @@
-Current Day : Tuesday
-Current Month : December
-Current Year : 2022
-Hours : 02
-Minutes : 26
-Seconds : 59
