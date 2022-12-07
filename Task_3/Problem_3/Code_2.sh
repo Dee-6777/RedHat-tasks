@@ -4,7 +4,7 @@
 
 total=0
 
-re='^[+-]?[0-9]+([.][0-9]+)?$'
+re='^-?[0-9]+[.]?[0-9]+$' 
 for i in $(cat file2.txt); do
   if [[ $i =~ $re ]];
   then
