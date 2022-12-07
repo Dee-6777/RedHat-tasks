@@ -1,6 +1,5 @@
 # Time Complexity : O(n)
-
-# Sum of the numbers (float, int, -ve)
+# Sum of the numbers (float, int, -ve & +ve integers)
 
 total=0
 rexprr='^-?[0-9]+[.]?[0-9]+$' 
@@ -10,16 +9,12 @@ for i in $(cat file2.txt); do
     total=$(echo $total + $i | bc);  # bc : basic calculator 
   fi
 done
-
 echo "sum = ${total}" 
 
 #Expln:
 # Finds and discards the strings which are found to be unsuitable for addition
 # Time Complexity will be O(n) where n represents the size of the input or the length of the array.
 # Addition occurs for the remaining suitable strings.
-
-
-
 
 # Few additional terms :
 # additional expression added for covering corner casses such as alpha-numeric characters, special characters etc..
