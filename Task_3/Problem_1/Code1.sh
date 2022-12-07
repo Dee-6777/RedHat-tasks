@@ -6,6 +6,7 @@
 # %S   second (00..60)
 
 # Time Complexity : O(1)
+# Space Complexity : O(1)
 
 echo -e "Current Day : $(date +%A)\nCurrent Month : $(date +%B)\nCurrent Year : $(date +%Y)\nHours : $(date +%H)\nMinutes : $(date +%M)\nSeconds : $(date +%S)" 
 
