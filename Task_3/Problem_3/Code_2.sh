@@ -15,7 +15,7 @@ echo "sum = ${total}"
 
 # additional expression added for covering corner casses such as alpha-numeric characters, special characters etc..
 # Here, ^ means it matches the empty string at the beginning of a line
-# - : represents the range 
+# [0-9] : represents the range 
 # + : The preceding item will be matched one or more times [1,]
 # ? : The preceding item is optional and will be matched, at most, once [0,1]
 # $ : Matches the empty string at the end of a line
