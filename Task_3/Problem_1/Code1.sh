@@ -11,4 +11,4 @@
 echo -e "Current Day : $(date +%A)\nCurrent Month : $(date +%B)\nCurrent Year : $(date +%Y)\nHours : $(date +%H)\nMinutes : $(date +%M)\nSeconds : $(date +%S)" 
 
 # Using echo command and modifiers 
-# -e : escape characters
+# -e : By using echo -e we're making echo to enable interpret backslash escapes. 
