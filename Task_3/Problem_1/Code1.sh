@@ -7,7 +7,7 @@
 
 # Time Complexity : O(1)
 
-echo -e "Current Day : $(date +%A)\nCurrent Month : $(date +%B)\nCurrent Year : $(date +%Y)\nHours : $(date +%H)\nMinutes : $(date +%M)\nSeconds : $(date +%S)" > Output1.txt
+echo -e "Current Day : $(date +%A)\nCurrent Month : $(date +%B)\nCurrent Year : $(date +%Y)\nHours : $(date +%H)\nMinutes : $(date +%M)\nSeconds : $(date +%S)" 
 
 # Using echo command and modifiers 
 # -e : escape characters
