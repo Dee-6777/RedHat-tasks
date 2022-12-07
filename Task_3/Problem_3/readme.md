@@ -14,7 +14,7 @@
     
     
     
-## Solution 2: (Using for loop and basic calculator(bc) )
+## Solution 2: (Using for loop, basic calculator(bc) and regular expression )
 * Time Complexity : O(n) (linear complexity)
 
 * How to run : Type `sh Code_2.sh` in your bash terminal
