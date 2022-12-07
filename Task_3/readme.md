@@ -6,6 +6,7 @@
 ### Solution 1:
 * Using `echo` and `modifiers`
 * Time Complexity : O(1)
+* Space Complexity : O(1)
 
 ## Problem 2:
 `Write a script to remove duplicated lines from a file.`
@@ -26,5 +27,5 @@
 * Time Complexity : O(n)
 
 ### Solution 2:
-* Using `for loop` and `basic calculator(bc)` 
+* Using `for loop` and `basic calculator(bc)` and `regular expressions`
 * Time Complexity : O(n)
