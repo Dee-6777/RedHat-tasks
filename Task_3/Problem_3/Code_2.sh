@@ -8,5 +8,5 @@ for i in $(cat file2.txt); do
   total=$(echo $total + $i | bc);  # bc : basic calculator 
 done
 
-echo "sum = ${total}" > output2.txt
+echo "sum = ${total}" 
 
