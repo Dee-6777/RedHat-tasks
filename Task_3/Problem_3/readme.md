@@ -12,6 +12,8 @@
     * `for i in $(cat file1.txt);do sum=$((sum+$i)) done` : For loop to generate sum of all the elements in the fle file1.txt.
     
     
+    
+    
 ## Solution 2: (Using for loop and basic calculator(bc) )
 * Time Complexity : O(n) (linear complexity)
 
@@ -21,4 +23,3 @@
     * `total=$(echo $total + $i | bc);` : Computes sum of all kinds of numbers such as integers and floating point values. The use of bc helps to calculate floating point values as it provides the functionality of a scientific calculator within a Bash script.
     
     * `rexprr='^-?[0-9]+[.]?[0-9]+$'` : This expression will help us discard each string which contains alpha-numeric characters, special characters etc..
-    
