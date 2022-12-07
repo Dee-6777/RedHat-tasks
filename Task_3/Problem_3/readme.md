@@ -11,7 +11,6 @@
     
     * `for i in $(cat file1.txt);do sum=$((sum+$i)) done` : For loop to generate sum of all the elements in the fle file1.txt.
     
-    * `echo "$sum" > output1.txt` : Stores output in the file output1.txt and if already present overwrites the file.
     
 ## Solution 2: (Using for loop and basic calculator(bc) )
 * Time Complexity : O(n) (linear complexity)
@@ -21,4 +20,4 @@
 * Explanation :
     * `total=$(echo $total + $i | bc);` : Computes sum of all kinds of numbers such as integers and floating point values. The use of bc helps to calculate floating point values as it provides the functionality of a scientific calculator within a Bash script.
     
-    * `echo "sum = ${total}" > output2.txt` : Stores the total sum in the file output2.txt and if already present overwrites the file. 
+    
