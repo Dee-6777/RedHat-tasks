@@ -3,9 +3,9 @@
 # Sum of the numbers (float, int, -ve)
 
 total=0
-rexprr='^-?[0-9]+[.]?[0-9]+$' #?
+rexprr='^-?[0-9]+[.]?[0-9]+$' 
 for i in $(cat file2.txt); do 
-  if [[ $i =~ $rexprr ]];   # this is a tilde symbol which is used for the expressions ?
+  if [[ $i =~ $rexprr ]];   
   then
     total=$(echo $total + $i | bc);  # bc : basic calculator 
   fi
