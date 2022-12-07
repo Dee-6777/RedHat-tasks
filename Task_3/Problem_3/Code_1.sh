@@ -14,3 +14,4 @@ do
 done
 
 echo "sum = $sum" 
+# limits only to +ve integers
