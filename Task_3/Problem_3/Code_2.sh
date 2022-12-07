@@ -1,4 +1,4 @@
-# Time Complexity : O(n)
+# Time Complexity : O(n) ; where n is the size of the input
 
 # Sum of the numbers (float, int, -ve)
 
