@@ -7,7 +7,7 @@ Iterate over the list and print for each item Food: <Food name>. Make sure to re
 ```
 ## Solution : 
 
-* How to run : Type `go run Code1.go` in your bash terminal
+* How to run : Type `go run Code_1.go` in your bash terminal
 
 * Explanation :
 This code uses date modifiers along with echo to get the desired output
