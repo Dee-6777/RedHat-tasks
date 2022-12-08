@@ -1,8 +1,6 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
 func IsLetter(s string) bool {
 	for _, r := range s {
