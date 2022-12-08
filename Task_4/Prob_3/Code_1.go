@@ -1,8 +1,6 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
 func main() {
 	students := [5]string{"Aditya", "Deepti", "Sai", "Arpita", "Harsh"}
