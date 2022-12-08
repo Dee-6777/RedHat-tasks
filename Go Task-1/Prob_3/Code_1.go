@@ -14,6 +14,6 @@ func main() {
 	students := [5]string{"Aditya", "Deepti", "Sai", "Arpita", "Harsh"}  // Declared an array of type string an initialised it with 5 Names of type string
 
 	for i, k := range students {
-		fmt.Printf("The name of the students is %s and the position of the student in the array is %v\n", k, i)  /* Here i represents the position of the 
-	}																										element inside the array and k is element */ 			
+		fmt.Printf("The name of the students is %s and the position of the student in the array is %v\n", k, i)  // Here i represents the position of the element inside the array and k is element  			
+	}
 }
