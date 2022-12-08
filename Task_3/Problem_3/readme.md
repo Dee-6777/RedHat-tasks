@@ -22,4 +22,4 @@
 * Explanation :
     * `total=$(echo $total + $i | bc);` : Computes sum of all kinds of numbers such as integers and floating point values. The use of bc helps to calculate floating point values as it provides the functionality of a scientific calculator within a Bash script.
     
-    * `rexprr='^-?[0-9]+[.]?[0-9]+$'` : This expression will help us discard each string which contains alpha-numeric characters, special characters etc..
+    * `rexprr='^-?[0-9]+([.][0-9]?)+$'` : This expression will help us discard each string which contains alpha-numeric characters, special characters etc..
