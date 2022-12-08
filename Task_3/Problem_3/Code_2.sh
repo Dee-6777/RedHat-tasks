@@ -3,7 +3,7 @@
 # Adds all the real numbers present in the file.
 
 total=0
-rexprr='^-?[0-9]+([.]?[0-9])+$' 
+rexprr='^-?[0-9]+([.][0-9]+)?$'  
 for i in $(cat file2.txt); do 
   if [[ $i =~ $rexprr ]];   
   then
