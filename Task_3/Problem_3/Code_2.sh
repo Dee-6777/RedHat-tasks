@@ -1,5 +1,6 @@
 # Time Complexity : O(n)
 # Sum of the numbers (float, int, -ve & +ve integers)
+# Adds all the real numbers present in the file.
 
 total=0
 rexprr='^-?[0-9]+([.]?[0-9])+$' 
@@ -12,7 +13,7 @@ done
 echo "sum = ${total}" 
 
 #Expln:
-# Finds and discards the strings which are found to be unsuitable for addition
+# Finds and discards the strings which are found to be unsuitable for addition. 
 # Time Complexity will be O(n) where n represents the size of the input or the length of the array.
 # Addition occurs for the remaining suitable strings.
 
