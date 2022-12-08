@@ -2,6 +2,8 @@
 
 ### Here I'm sharing my RedHat tasks.
 
+## LINUX TASKS
+
 ## TASK-1
 * `Presentation on LINUX Commands and it's functionalities.`
 
@@ -16,7 +18,7 @@
 `Write a script to remove duplicated lines from a file`
 * Problem-3 :
 `Write a script to find the sum of all numbers in a file in Linux`
-
+## GO TASKS
 ## GO TASK-1
 ```
 1.Write a loop to ask the name , age and nationality from a user and print "Your name is ___  your age is ___ years old and your nationality is __ .
