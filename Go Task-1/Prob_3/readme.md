@@ -12,3 +12,6 @@ Iterate over it and print for each item the following: This is <ITEM> and its in
     * `students := [5]string{"Aditya", "Deepti", "Sai", "Arpita", "Harsh"}` : Declared an array called Students of type string and initialised with 5 elements.
     * `for i, k := range Menu {}` : looping over the elements inside Menu array.
     * `fmt.Printf("The name of the students is %s and the position of the student in the array is %v\n", k, i)`: Printed the name of the students first and after that their position in the array.
+
+## Output :
+![Screenshot from 2022-12-09 02-25-47](https://user-images.githubusercontent.com/73513838/206565939-4e386559-d539-48b1-8aa6-1d64c5f38fe7.png)
