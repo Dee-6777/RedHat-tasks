@@ -11,7 +11,7 @@ Iterate over the list and print for each item Food: <Food name>. Make sure to re
 * Time Complexity : O(N) [Linear time Complexity]
 * Explanation :
 * In this code I've first defined an array named "Menu" and then appended the two items using the inbuild append function. And after that printed as per the given format.
-    * `Menu := []string{"Pizza", "Chicken Nuggets", "French Fries"}` : Declared an array called Menu and added 3 elements initially.
+    * `Menu := []string{"Pizza", "Chicken Nuggets", "French Fries"}` : Declared a slice named Menu and added 3 elements initially.
     * `Menu = append(Menu, "Hamburger", "Salad")` : appended the required elements
     * `for i := 0; i < len(Menu); i++ {}` : looping over the elements inside Menu array.
 
