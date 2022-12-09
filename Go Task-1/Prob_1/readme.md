@@ -6,6 +6,7 @@ This should be infinite loop
 ## Solution : 
 
 * How to run : Type `go run Code1.go` in your bash terminal
+
 * Space Complexity : O(1) [constant]
 * Explanation :
 This code has been made using functions IsNumber() and IsLetter() and using an infinite user controlled loop. 
