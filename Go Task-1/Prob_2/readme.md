@@ -13,7 +13,7 @@ Iterate over the list and print for each item Food: <Food name>. Make sure to re
 * In this code I've first defined an array named "Menu" and then appended the two items using the inbuild append function. And after that printed as per the given format.
     * `Menu := []string{"Pizza", "Chicken Nuggets", "French Fries"}` : Declared an array called Menu and added 3 elements initially.
     * `Menu = append(Menu, "Hamburger", "Salad")` : appended the required elements
-    * `for _, k := range Menu {}` : looping over the elements inside Menu array.
+    * `for i := 0; i < len(Menu); i++ {}` : looping over the elements inside Menu array.
 
 ## Output
 ![Screenshot from 2022-12-09 02-18-48](https://user-images.githubusercontent.com/73513838/206564818-e00559f9-64a2-4c70-bb3f-2a6b037fdac5.png)
