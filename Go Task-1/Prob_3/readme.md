@@ -9,7 +9,7 @@ Iterate over it and print for each item the following: This is <ITEM> and its in
 * Space Complexity : O(N) [Linear time Complexity]
 * Explanation :
 * In this code I've first defined an array named "Students" having 5 elements and then printed as per the given format.
-    * `students := [5]string{"Aditya", "Deepti", "Sai", "Arpita", "Harsh"}` : Declared an array called Students of type string and initialised with 5 elements.
+    * `students := [5]string{"Aditya", "Deepti", "Sai", "Arpita", "Harsh"}` : Declared an array called Students of type string and initialised it with 5 elements.
     * `for i, k := range Menu {}` : looping over the elements inside Menu array.
     * `fmt.Printf("The name of the students is %s and the position of the student in the array is %v\n", k, i)`: Printed the name of the students first and after that their position in the array.
 
