@@ -11,7 +11,7 @@ import "fmt"  	/*fmt stands for the Format package. This package allows to forma
 				or write into a file using a writer or even print customized fancy error messages.*/
 
 func main() {
-	Menu := []string{"Pizza", "Chicken Nuggets", "French Fries"}  // Declared an array of type string an initialised it with 3 items
+	Menu := []string{"Pizza", "Chicken Nuggets", "French Fries"}  // Declared a slice and initialised it with 3 items
 	Menu = append(Menu, "Hamburger", "Salad")     // Appended the two items asked i.e "Hamburger" and "Salad"
 	for i := 0; i < len(Menu); i++ {
 		fmt.Printf("Food : %s\n", Menu[i])
