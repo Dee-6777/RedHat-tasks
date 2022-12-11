@@ -18,7 +18,7 @@ func IsLetter(s string) bool {    // Function to check if the string contains an
 	return true
 }
 
-func IsNumber(s string) bool {      // Function to check if the string contains any character other than alphabets.
+func IsNumber(s string) bool {      // Function to check if the string contains any character other than numbers.
 	for _, c := range s {
 		if c < '0' || c > '9' {
 			return false
