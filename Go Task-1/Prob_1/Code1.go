@@ -58,7 +58,7 @@ func main() {
 			fmt.Scanln(&nationality)
 		}
 
-		fmt.Printf("Your name is %s %s your age is %v years old and your nationality is %s\n", name1, name2, age, nationality)  // Printing as per in the format asked in the question
+		fmt.Printf("Your name is %s %s your age is %v years old and your nationality is %s\n", name1, name2, age, nationality)  // Printing as per the format asked in the question
 		fmt.Println("Want to continue?\nThen type 1 else type 0")
 		fmt.Scanln(&check)
 	}
