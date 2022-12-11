@@ -35,6 +35,7 @@ func main() {
 		var nationality string
 		fmt.Println("Enter your First Name :")
 		fmt.Scanln(&name1)
+		
 		for (IsLetter(name1)) == false {      // Here it sends 'name1' to the above defined IsLetter function to check whether it is alphabet or not
 			fmt.Println("Enter again :")      // If the return is false it will ask to enter again until correct input is recieved
 			fmt.Scanln(&name1)
