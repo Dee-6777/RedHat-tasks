@@ -14,3 +14,4 @@ Print the generated random number
 * Explanation :
 
 ## Output :
+![Screenshot from 2022-12-12 23-40-36](https://user-images.githubusercontent.com/73513838/207122870-4ac7527a-bda0-4be6-b7f5-3c4ddb516bbc.png)
