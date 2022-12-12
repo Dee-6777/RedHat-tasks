@@ -58,8 +58,8 @@ func main() {
 			fmt.Println("Enter again :")
 			fmt.Scanln(&nationality)
 		}
-
-		fmt.Printf("Your name is %s %s your age is %v years old and your nationality is %s\n", name1, name2, age, nationality)  // Printing as per the format asked in the question
+		fmt.Println("Your name is", name1, name2, "your age is", age, "years old and your nationality is", nationality) // Printing as per in the format asked in the question
+		
 		fmt.Println("Want to continue?\nThen type 1 else type 0")
 		fmt.Scanln(&check)
 	}
