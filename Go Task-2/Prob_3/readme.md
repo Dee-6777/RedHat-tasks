@@ -18,4 +18,4 @@ Modify the conditional in the code of Prob-2 to check not only if the  number is
 * Used crypto/rand and user-controlled infinite loop
 
 ## Output :
-
+![Screenshot from 2022-12-13 03-43-54](https://user-images.githubusercontent.com/73513838/207167724-6ed10182-7700-4340-a409-a1da710e2126.png)
