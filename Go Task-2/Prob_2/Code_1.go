@@ -4,12 +4,14 @@
 package main
 
 import (
-	"fmt"       // fmt stands for the Format package. This package allows to format basic strings, values, or anything and print
+	"fmt" // fmt stands for the Format package. This package allows to format basic strings, values, or anything and print
+	"log"
 	"math/rand" // provides inbuilt support for generating random numbers of the specified type
-	"time"      // provides current time and it initialises rand.Seed with the current time which is expressed in microseconds
+	"time"      // provides current time and in rand.Seed it is initialised with the current time expressed in microseconds
 )
 
 func main() {
+	start := time.Now()
 	// Seeding - Go provides a method, Seed(see int64), that allows you to initialize this default sequence
 	// Implementation is slow to make it faster rand.Seed(time.Now().UnixNano()) is added.
 	// Seed is the current time, converted to int64 by UnixNano.
@@ -43,9 +45,8 @@ func main() {
 
 		if check == false {
 			fmt.Println("Thanks for using")
-			
 		}
 
 	}
-
+	log.Printf("main, execution time %s\n", time.Since(start))
 }
