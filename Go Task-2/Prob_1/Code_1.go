@@ -7,7 +7,7 @@ The main function in the main package is the entry point of the program*/
 import (
 	"fmt"       // fmt stands for the Format package. This package allows to format basic strings, values, or anything and print
 	"math/rand" // provides inbuilt support for generating random numbers of the specified type
-	"time"      // provides current time and in rand.Seed it is initialised with the current time expressed in microseconds
+	"time"      // provides current time and it initialises rand.Seed with the current time which is expressed in microseconds
 )
 
 func main() {
