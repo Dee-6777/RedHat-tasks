@@ -11,7 +11,7 @@ Print the generated random number
 * How to run : Type `go run Code_1.go` in your bash terminal
 * Time Complexity : N*O(1)
 * Space Complexity : O(1) [constant]
-* Explanation :
+* Explanation : Using random function and usercontrolled infinite loop
 
 ## Output :
 ![Screenshot from 2022-12-12 23-40-36](https://user-images.githubusercontent.com/73513838/207122870-4ac7527a-bda0-4be6-b7f5-3c4ddb516bbc.png)
