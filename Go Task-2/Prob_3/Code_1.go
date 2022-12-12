@@ -14,7 +14,7 @@ func main() {
 	// Implementation is slow to make it faster rand.Seed(time.Now().UnixNano()) is added.
 	// Seed is the current time, converted to int64 by UnixNano.
 	// Gives constantly changing numbers
-	rand.Seed(time.Now().UnixNano())
+	rand.Seed(time.Now().UnixNano()) // // Seed uses the provided seed value to initialize the default Source to a deterministic state, If Seed is not called, the generator behaves as if seeded by Seed(1).
 	var check bool = true
 	for check == true {
 
