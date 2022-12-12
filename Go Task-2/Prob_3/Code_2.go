@@ -58,6 +58,6 @@ func main() {
 			fmt.Println("Thanks for using")
 		}
 	}
+	
 	log.Printf("main, execution time %s\n", time.Since(start))
-
 }
