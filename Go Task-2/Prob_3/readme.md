@@ -12,7 +12,7 @@ Modify the conditional in the code of Prob-2 to check not only if the  number is
 
 ## Solution 2:
 
-* How to run : Type `go run Code_1.go` in your bash terminal
+* How to run : Type `go run Code_2.go` in your bash terminal
 * Time Complexity : N*O(1)
 * Space Complexity : O(1) [constant]
 * Used crypto/rand and user-controlled infinite loop
