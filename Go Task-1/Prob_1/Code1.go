@@ -1,5 +1,5 @@
 // Space Complexity : O(1) i.e only variables are used
-
+// Time Complexity : O(N)
 // This program uses infinite but user controlled loop and functions to check characters those are alphabets or digits
 
 
