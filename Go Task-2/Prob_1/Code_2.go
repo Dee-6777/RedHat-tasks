@@ -5,11 +5,11 @@ package main /* The package main tells the Go compiler that the package should c
 The main function in the main package is the entry point of the program*/
 
 import (
-	"crypto/rand"
+	"crypto/rand" // provides inbuilt support for generating random numbers of the specified type
 	"fmt" // fmt stands for the Format package. This package allows to format basic strings, values, or anything and print
-	"log"
-	"math/big"
-	"time"
+	"log" // writes to standard error and prints the date and time of each logged message
+	"math/big" // implements arbitrary-precision arithmetic 
+	"time" // used to import time.now for for start
 )
 
 func genRandNum(min, max int64) int64 {
