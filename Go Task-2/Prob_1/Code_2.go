@@ -6,10 +6,10 @@ The main function in the main package is the entry point of the program*/
 
 import (
 	"crypto/rand" // provides inbuilt support for generating random numbers of the specified type
-	"fmt" // fmt stands for the Format package. This package allows to format basic strings, values, or anything and print
-	"log" // writes to standard error and prints the date and time of each logged message
-	"math/big" // implements arbitrary-precision arithmetic 
-	"time" // used to import time.now for for start
+	"fmt"         // fmt stands for the Format package. This package allows to format basic strings, values, or anything and print
+	"log"         // writes to standard error and prints the date and time of each logged message
+	"math/big"    // implements arbitrary-precision arithmetic
+	"time"        // used to import time.now for for start
 )
 
 func genRandNum(min, max int64) int64 {
@@ -17,7 +17,7 @@ func genRandNum(min, max int64) int64 {
 	bg := big.NewInt(max - min)
 
 	// get big.Int between 0 and bg
-	// in this case 0 to 101
+	// in this case 0 to 100
 	n, err := rand.Int(rand.Reader, bg)
 	if err != nil {
 		panic(err)

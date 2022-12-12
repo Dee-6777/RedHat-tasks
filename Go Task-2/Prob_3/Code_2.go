@@ -17,7 +17,7 @@ func genRandNum(min, max int64) int64 {
 	bg := big.NewInt(max - min)
 
 	// get big.Int between 0 and bg
-	// in this case 0 to 101
+	// in this case 0 to 100
 	n, err := rand.Int(rand.Reader, bg)
 	if err != nil {
 		panic(err)
@@ -58,6 +58,6 @@ func main() {
 			fmt.Println("Thanks for using")
 		}
 	}
-	
+
 	log.Printf("main, execution time %s\n", time.Since(start))
 }
