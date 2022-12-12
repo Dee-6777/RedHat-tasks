@@ -6,7 +6,7 @@ The main function in the main package is the entry point of the program*/
 
 import (
 	"fmt" // fmt stands for the Format package. This package allows to format basic strings, values, or anything and print
-	"log"
+	"log" // writes to standard error and prints the date and time of each logged message
 	"math/rand" // provides inbuilt support for generating random numbers of the specified type
 	"time"      // provides current time and in rand.Seed it is initialised with the current time expressed in microseconds
 )
