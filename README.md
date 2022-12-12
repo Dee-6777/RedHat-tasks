@@ -32,7 +32,7 @@
 3.Define an array of 5 items
    Iterate over it and print for each item the following: This is <ITEM> and its index in the array is <INDEX>
    ```
-## GO TASK-1
+## GO TASK-2
 ```
 1. Generate a random number between 1 and 100
    If the number is higher than 50 print "It's closer to 100"
