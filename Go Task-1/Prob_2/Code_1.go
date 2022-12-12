@@ -13,7 +13,7 @@ import "fmt"  	/*fmt stands for the Format package. This package allows to forma
 func main() {
 	Menu := []string{"Pizza", "Chicken Nuggets", "French Fries"}  // Declared a slice and initialised it with 3 items
 	Menu = append(Menu, "Hamburger", "Salad")     // Appended the two items asked i.e "Hamburger" and "Salad"
-	for _,i : range Menu {
+	for _,i := range Menu {
 		fmt.Printf("Food : %s\n", i)
 	}
 }
