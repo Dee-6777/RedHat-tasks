@@ -5,17 +5,19 @@ package main /* The package main tells the Go compiler that the package should c
 The main function in the main package is the entry point of the program*/
 
 import (
-	"fmt"       // fmt stands for the Format package. This package allows to format basic strings, values, or anything and print
+	"fmt" // fmt stands for the Format package. This package allows to format basic strings, values, or anything and print
+	"log"
 	"math/rand" // provides inbuilt support for generating random numbers of the specified type
-	"time"      // provides current time and it initialises rand.Seed with the current time which is expressed in microseconds
+	"time"      // provides current time and in rand.Seed it is initialised with the current time expressed in microseconds
 )
 
 func main() {
+	start := time.Now()
 	// Seeding - Go provides a method, Seed(see int64), that allows you to initialize this default sequence
 	// Implementation is slow to make it faster rand.Seed(time.Now().UnixNano()) is added.
 	// Seed is the current time, converted to int64 by UnixNano.
 	// Gives constantly changing numbers
-	rand.Seed(time.Now().UnixNano())  // Seed uses the provided seed value to initialize the default Source to a deterministic state, If Seed is not called, the generator behaves as if seeded by Seed(1).
+	rand.Seed(time.Now().UnixNano()) // Seed uses the provided seed value to initialize the default Source to a deterministic state, If Seed is not called, the generator behaves as if seeded by Seed(1).
 	var check bool = true
 	for check == true {
 
@@ -39,4 +41,5 @@ func main() {
 			fmt.Println("Thanks for using")
 		}
 	}
+	log.Printf("main, execution time %s\n", time.Since(start))
 }
