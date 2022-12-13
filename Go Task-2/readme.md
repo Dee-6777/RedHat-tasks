@@ -16,7 +16,7 @@ Modify the conditional in the code of Prob-2 to check not only if the  number is
 ## Conclusion :
 
 ```
-As long as the Time Complexity is concerned, the math/rand and crypto/rand almost consumes same amount of time. But we cannot use math/rand in every case because :
+After running all the solutions we can say that, as long as the Time Complexity is concerned, the math/rand and crypto/rand almost consumes same amount of time. But we cannot use math/rand in every case because :
 
 
 Math.random() is implemented using a pseudo-random number generator (PRNG). This means that the random number is derived from an internal state, mangled by a deterministic algorithm for every new random  number. 
