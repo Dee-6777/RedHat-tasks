@@ -1,4 +1,4 @@
-# Problem 1:
+# Problem 2:
 ```
 Modify Problem-1 to print "It's 50!" if the random number is 50
 ```
