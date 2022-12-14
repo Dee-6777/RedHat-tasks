@@ -4,11 +4,7 @@ import (
 	"encoding/json" //to encode it to json
 	"fmt"
 	"log"
-
-	//not
-	"net/http" //not
-	//"strconv"
-	//"math/rand"
+	"net/http" 
 	"github.com/gorilla/mux"
 )
 
