@@ -113,9 +113,9 @@ func main() {
 
 	// Registering Request Handlers
 	// if an upcoming request URL matches one of the paths, the correspondng handler is called passing (http.ResponseWriter, *http.Request) as parameters
-	r.HandleFunc("/todos", getTodos).Methods("GET")           // Registering get request handler for fetching all the todos present in our database
-	r.HandleFunc("/todos/{id}", getTodo).Methods("GET")       // Registering get request handler which will fetch a todo using it's id in our database
-	r.HandleFunc("/todos", createTodo).Methods("POST")        // Registering post request handler to create and add a new todo in our database
+	r.HandleFunc("/todos", getTodos).Methods("GET")           // Registering get request handler for fetching all the elements present in our database
+	r.HandleFunc("/todos/{id}", getTodo).Methods("GET")       // Registering get request handler which will fetch a single element using it's id in our database
+	r.HandleFunc("/todos", createTodo).Methods("POST")        // Registering post request handler to create and add a new element in our database
 	r.HandleFunc("/todos/{id}", updateTodo).Methods("PUT")    // Registering put request handler to update a todo
 	r.HandleFunc("/todos/{id}", deleteTodo).Methods("DELETE") // Registering delete request handler to delete a todo
 
