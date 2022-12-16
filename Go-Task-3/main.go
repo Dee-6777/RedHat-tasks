@@ -1,14 +1,20 @@
+//The name mux stands for "HTTP request multiplexer".
+//Like the standard http.ServeMux, mux.Router matches incoming requests against a list of registered routes and calls a handler for the route that matches the URL or other conditions.
+
 package main
 
 import (
-	"encoding/json"          // To encode it to json
-	"fmt"                    // This package allows to format basic strings, values, or anything and print
-	"github.com/gorilla/mux" // Package mux implements a request router and dispatcher.
-	"log"                    // To logout errors
-	"net/http"               // allows to create a server
+	"encoding/json" // To encode it to json
+	"fmt"           // This package allows to format basic strings, values, or anything and print
+	"log"           // To logout errors
+	"net/http"      // allows to create a server
+
+	"github.com/gorilla/mux" // gorilla/mux is a package which adapts to Go’s default HTTP router and establish different routes
 )
 
-type todo struct { // struct and slices has been used as databases
+/*...............................model.....................................*/
+
+type todo struct { // struct and slices has been used as database
 	ID        string `json:"id"`
 	Item      string `json:"title"`
 	Duration  string `json:"time"`
@@ -24,25 +30,29 @@ var todos = []todo{ // slice of type todo has been declared and initialised with
 	{ID: "6", Item: "Attend Meeting", Duration: "30 min", Completed: false},
 }
 
+/*................................ controllers ..................................................*/
+
 // @GET ('/todos') ...to fetch data
-func getTodos(w http.ResponseWriter, r *http.Request) {
+func getTodos(w http.ResponseWriter, r *http.Request) { // r is the pointer of the request that you'll send from thunder client/postman and w is the response from the function
 	//set json content type
-	w.Header().Set("Content-Type", "application/json")
-	json.NewEncoder(w).Encode(todos)
+	w.Header().Set("Content-Type", "application/json") //our golang struct needs to be converted to json coming into it so it sends the http json header to the browser to inform it what kind of data it expects.
+	json.NewEncoder(w).Encode(todos)                   // the response we're sending is encoded to json (whole todos is converted to json)
 }
+
+/* In an http.HandlerFunc, the http.ResponseWriter value (named w in your handlers) is used to control the response information being written back to the client that made the request, such as the body of the response or the status code.
+Then, the *http.Request value (named r in your handlers) is used to get information about the request that came into the server, such as the body being sent in the case of a POST request*/
 
 // @DELETE ('/todos/{id}') ...to delete a value by using id
 func deleteTodo(w http.ResponseWriter, r *http.Request) {
-	//set json content type
+	//set content type indicates that the request body format is in JSON
 	w.Header().Set("Content-Type", "application/json")
-	//The name mux stands for "HTTP request multiplexer". 
-	//Like the standard http.ServeMux, mux.Router matches incoming requests against a list of registered routes and calls a handler for the route that matches the URL or other conditions.
+	// we are declaring a variable called params which will store the request
 	params := mux.Vars(r)
-	//loop over the todos, range
+	//loop over the todos
 	//delete the todo with the id that you've sent
 	for index, item := range todos {
 		if item.ID == params["id"] {
-			todos = append(todos[:index], todos[index+1:]...)
+			todos = append(todos[:index], todos[index+1:]...) // inplace of todos[:index] it will append all other todos after that
 			break
 		}
 	}
@@ -56,7 +66,8 @@ func getTodo(w http.ResponseWriter, r *http.Request) {
 	params := mux.Vars(r)
 	for _, item := range todos {
 		if item.ID == params["id"] {
-			json.NewEncoder(w).Encode(item)
+			json.NewEncoder(w).Encode(item) //will convert to json the only value who's id has been matched
+			return
 		}
 	}
 }
@@ -66,16 +77,16 @@ func createTodo(w http.ResponseWriter, r *http.Request) {
 	//set json content type
 	w.Header().Set("Content-Type", "application/json")
 	var todo todo
-	_ = json.NewDecoder(r.Body).Decode(&todo)
-	todos = append(todos, todo)
-	json.NewEncoder(w).Encode(todo)
+	_ = json.NewDecoder(r.Body).Decode(&todo) //Try to decode the entire request body into struct we don't want to store the error so used a blank identifier which will respond to the client with the error message and a 400 status code.
+	todos = append(todos, todo)               // appended the new todo inside todos
+	json.NewEncoder(w).Encode(todo)           // again encoded to json
 }
 
 // @PUT ('/todos/{id}') ...update data
 func updateTodo(w http.ResponseWriter, r *http.Request) {
 	//set json content type
 	w.Header().Set("Content-Type", "application/json")
-	//params
+	//params will store the request
 	params := mux.Vars(r)
 	//loop over the todos, range
 	//delete the todo with the id that you've sent
@@ -91,14 +102,22 @@ func updateTodo(w http.ResponseWriter, r *http.Request) {
 		}
 	}
 }
+
 func main() {
+	//First create a new request router.
+	//The router is the main router for your web application and will later be passed as parameter to the server.
+	//It will receive all HTTP connections and pass it on to the request handlers you will register on it.
 	r := mux.NewRouter()
 
-	r.HandleFunc("/todos", getTodos).Methods("GET")           // func to display all the data present in the todo[]
-	r.HandleFunc("/todos/{id}", getTodo).Methods("GET")       // func to get a single value
-	r.HandleFunc("/todos", createTodo).Methods("POST")        // func to create and add a new value in the existing data
-	r.HandleFunc("/todos/{id}", updateTodo).Methods("PUT")    // func to update an existing value
-	r.HandleFunc("/todos/{id}", deleteTodo).Methods("DELETE") // func to delete a value from the data
+	/*..............................Routers............................*/
+
+	// Registering Request Handlers
+	// if an upcoming request URL matches one of the paths, the correspondng handler is called passing (http.ResponseWriter, *http.Request) as parameters
+	r.HandleFunc("/todos", getTodos).Methods("GET")           // Registering get request handler for fetching all the todos present in our database
+	r.HandleFunc("/todos/{id}", getTodo).Methods("GET")       // Registering get request handler which will fetch a todo using it's id in our database
+	r.HandleFunc("/todos", createTodo).Methods("POST")        // Registering post request handler to create and add a new todo in our database
+	r.HandleFunc("/todos/{id}", updateTodo).Methods("PUT")    // Registering put request handler to update a todo
+	r.HandleFunc("/todos/{id}", deleteTodo).Methods("DELETE") // Registering delete request handler to delete a todo
 
 	fmt.Printf("Starting server at port 8080\n")
 	log.Fatal(http.ListenAndServe(":8080", r)) // to start a server at port:8080
